@@ -45,8 +45,6 @@ export class ContactForm extends Component {
     toast.error(`${name} is already in contact`, {
       duration: 1500,
     });
-
-    // this.setState(CLEAR_STATE);
   };
 
   render() {
