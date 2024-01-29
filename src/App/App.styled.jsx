@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   max-width: 50vw;
   margin: 0 auto;
-  margin-top: 30vh;
+  margin-top: 10vh;
 `;
 
 export const Title = styled.h2`

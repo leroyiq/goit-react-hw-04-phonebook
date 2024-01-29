@@ -1,14 +1,7 @@
 import { useState } from 'react';
-import {
-  Form,
-  Button,
-  Label,
-  Input,
-  Span,
-} from './ContactForm.styled';
+import { Form, Button, Label, Input, Span} from './ContactForm.styled';
 import { FcPlus } from 'react-icons/fc';
 import toast from 'react-hot-toast';
-import PropTypes from 'prop-types';
 
 export const ContactForm = ({ addContact, onContacts }) => {
   const [name, setName] = useState('');
@@ -83,7 +76,3 @@ export const ContactForm = ({ addContact, onContacts }) => {
   );
 };
 
-ContactForm.propTypes = {
-  addContact: PropTypes.func.isRequired,
-  onContacts: PropTypes.array.isRequired,
-};

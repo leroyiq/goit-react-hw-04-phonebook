@@ -1,10 +1,8 @@
 import { nanoid } from 'nanoid';
 import { useState, useEffect } from 'react';
-import { ContactForm } from '../ContactForm/ContactForm';
-import { ContactList } from '../ContactList/ContactList';
-import { Filter } from 'components/Filter/Filter';
 import { Wrapper, Title } from './App.styled';
 import toast, { Toaster } from 'react-hot-toast';
+import { ContactForm, ContactList, Filter} from 'components';
 
 const initContacts = [
   { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
@@ -13,7 +11,7 @@ const initContacts = [
   { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
 ];
 
-export function App() {
+export const App = () => {
   const [contacts, setContacts] = useState(() => {
     return (
       JSON.parse(localStorage.getItem('contacts')) || initContacts
